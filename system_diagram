@@ -1,0 +1,121 @@
+<mxfile host="65bd71144e">
+    <diagram id="UKTrFqfbEvi4SRhkCZn-" name="Page-1">
+        <mxGraphModel dx="1586" dy="346" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" style="edgeStyle=entityRelationEdgeStyle;html=1;" parent="1" source="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="/tf&lt;br&gt;[tf2_msgs/msg/TFMessage]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="3" vertex="1" connectable="0">
+                    <mxGeometry x="0.2799" y="2" relative="1" as="geometry">
+                        <mxPoint x="-22" y="-8" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=entityRelationEdgeStyle;html=1;" parent="1" source="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="310" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="/detections&lt;br&gt;[apriltag_msgs/msg/AprilTagDetectionArray]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5" vertex="1" connectable="0">
+                    <mxGeometry x="-0.159" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="apriltag_ros" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="230" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=entityRelationEdgeStyle;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-10.000000000000114" y="270" as="targetPoint"/>
+                        <mxPoint x="-60" y="60" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="image_rect (raw)&lt;br&gt;[sensor_msgs/msg/Image]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7" vertex="1" connectable="0">
+                    <mxGeometry x="-0.159" relative="1" as="geometry">
+                        <mxPoint x="35" y="7" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=entityRelationEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-80" y="295" as="targetPoint"/>
+                        <mxPoint x="-290" y="340" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="image_rect/compressed (compressed)&lt;br&gt;[sensor_msgs/msg/CompressedImage]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9" vertex="1" connectable="0">
+                    <mxGeometry x="-0.159" relative="1" as="geometry">
+                        <mxPoint x="35" y="7" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=entityRelationEdgeStyle;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-30" y="330" as="targetPoint"/>
+                        <mxPoint x="-230" y="430" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="camera_info&lt;br&gt;[sensor_msgs/msg/CameraInfo]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="11" vertex="1" connectable="0">
+                    <mxGeometry x="-0.159" relative="1" as="geometry">
+                        <mxPoint x="35" y="7" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=1;html=1;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-340" y="160" as="targetPoint"/>
+                        <mxPoint x="-370" y="100" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="/camera&lt;br&gt;[sensor_msgs/msg/Image]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="14" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0087" y="-2" relative="1" as="geometry">
+                        <mxPoint x="15" y="-7" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="basler_camera" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="-570" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="endArrow=classic;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="30" y="80" as="sourcePoint"/>
+                        <mxPoint x="160" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="Alias" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="16" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="/camera" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" parent="16" connectable="0" vertex="1">
+                    <mxGeometry x="-1" relative="1" as="geometry">
+                        <mxPoint x="-20" y="20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="/image_rect" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" parent="16" connectable="0" vertex="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="30" y="20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-560" y="230" as="sourcePoint"/>
+                        <mxPoint x="-360" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="ROS Image Transport Protocol" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="21">
+                    <mxGeometry x="0.2066" y="-3" relative="1" as="geometry">
+                        <mxPoint x="-31" y="17" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="" style="shape=link;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=entityRelationEdgeStyle;width=6;" edge="1" parent="1" source="13">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="-290" y="60" as="sourcePoint"/>
+                        <mxPoint x="-370" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="ROS Image Transport Protocol" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="23">
+                    <mxGeometry x="0.1724" y="-2" relative="1" as="geometry">
+                        <mxPoint x="37" y="-43" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

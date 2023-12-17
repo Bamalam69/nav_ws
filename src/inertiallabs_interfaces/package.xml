@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>inertiallabs_interfaces</name>
+  <version>1.0.0</version>
+  <description>The Inertial Labs Message package</description>
+  <maintainer email="omprakashpatro@gmail.com">Omprakash Patra</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>actionlib_msgs</depend>
+  <!-- <depend>message_generation</depend> -->
+  <!-- <build_depend>message_runtime</build_depend> -->
+
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <msg_files>
+      msg/GnssData.msg
+      msg/GpsData.msg
+      msg/InsData.msg
+      msg/MarineData.msg
+      msg/SensorData.msg
+    </msg_files>
+  </export>
+</package>
