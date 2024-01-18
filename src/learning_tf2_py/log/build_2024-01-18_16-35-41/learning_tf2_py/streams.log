@@ -1,0 +1,24 @@
+[1.798s] Invoking command in '/home/nvidia/nav_ws/src/learning_tf2_py/build/learning_tf2_py': PYTHONPATH=/home/nvidia/nav_ws/src/learning_tf2_py/build/learning_tf2_py/prefix_override:/home/nvidia/nav_ws/src/learning_tf2_py/install/learning_tf2_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/nvidia/nav_ws/src/learning_tf2_py/build/learning_tf2_py/build --no-deps install_data
+[2.257s] running develop
+[2.531s] running egg_info
+[2.531s] creating learning_tf2_py.egg-info
+[2.532s] writing learning_tf2_py.egg-info/PKG-INFO
+[2.532s] writing dependency_links to learning_tf2_py.egg-info/dependency_links.txt
+[2.532s] writing entry points to learning_tf2_py.egg-info/entry_points.txt
+[2.532s] writing requirements to learning_tf2_py.egg-info/requires.txt
+[2.532s] writing top-level names to learning_tf2_py.egg-info/top_level.txt
+[2.537s] writing manifest file 'learning_tf2_py.egg-info/SOURCES.txt'
+[2.595s] reading manifest file 'learning_tf2_py.egg-info/SOURCES.txt'
+[2.596s] writing manifest file 'learning_tf2_py.egg-info/SOURCES.txt'
+[2.667s] running build_ext
+[2.667s] Creating /home/nvidia/nav_ws/src/learning_tf2_py/install/learning_tf2_py/lib/python3.8/site-packages/site.py
+[2.671s] Creating /home/nvidia/nav_ws/src/learning_tf2_py/install/learning_tf2_py/lib/python3.8/site-packages/learning-tf2-py.egg-link (link to .)
+[2.673s] 
+[2.673s] Installed /home/nvidia/nav_ws/src/learning_tf2_py/build/learning_tf2_py
+[2.674s] running install_data
+[2.674s] creating /home/nvidia/nav_ws/src/learning_tf2_py/install/learning_tf2_py/share/ament_index
+[2.674s] creating /home/nvidia/nav_ws/src/learning_tf2_py/install/learning_tf2_py/share/ament_index/resource_index
+[2.674s] creating /home/nvidia/nav_ws/src/learning_tf2_py/install/learning_tf2_py/share/ament_index/resource_index/packages
+[2.674s] copying resource/learning_tf2_py -> /home/nvidia/nav_ws/src/learning_tf2_py/install/learning_tf2_py/share/ament_index/resource_index/packages
+[2.675s] copying package.xml -> /home/nvidia/nav_ws/src/learning_tf2_py/install/learning_tf2_py/share/learning_tf2_py
+[2.755s] Invoked command in '/home/nvidia/nav_ws/src/learning_tf2_py/build/learning_tf2_py' returned '0': PYTHONPATH=/home/nvidia/nav_ws/src/learning_tf2_py/build/learning_tf2_py/prefix_override:/home/nvidia/nav_ws/src/learning_tf2_py/install/learning_tf2_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/nvidia/nav_ws/src/learning_tf2_py/build/learning_tf2_py/build --no-deps install_data
