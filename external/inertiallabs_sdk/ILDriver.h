@@ -3,6 +3,7 @@
 #include <fstream>
 #include "dataStructures.h"
 #include "Transport.h"
+#include <functional>
 
 namespace IL {
 	class Driver
@@ -29,7 +30,8 @@ namespace IL {
 		INSDeviceInfo getDeviceInfo();
 		INSDevicePar getDeviceParams();
 		bool isStarted() { return sessionState == Processing; }
-		void setCallback(void (*newCallback)(INSDataStruct*, void*), void* userContext);
+		// void setCallback(void (*newCallback)(INSDataStruct*, void*), void* userContext);
+		void setCallback(std::function<void(INSDataStruct*)> newCallback);
 
 	private:
 		INSDataStruct latestData;
@@ -48,8 +50,8 @@ namespace IL {
 		void readerLoop();
 		static void threadFunc(Driver* instance) { instance->readerLoop(); }
 		std::ofstream log;
-		void (*callback)(INSDataStruct*, void*);
-		void* callbackContext;
+		// void (*callback)(INSDataStruct*, void*);
+		std::function<void(INSDataStruct*)> callback;
 	};
 
 }

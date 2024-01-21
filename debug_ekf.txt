@@ -1,0 +1,1147 @@
+tf_prefix is 
+map_frame is map
+odom_frame is odom
+base_link_frame is base_link
+base_link_output_frame is base_link
+world_frame is map
+transform_time_offset is 0
+transform_timeout is 0
+frequency is 70
+sensor_timeout is 0.0142857
+two_d_mode is false
+smooth_lagged_data is false
+history_length is 0
+use_control is false
+control_config is (false false false false false false )
+
+control_timeout is 0
+acceleration_limits are (1 1 1 1 1 1 )
+
+acceleration_gains are (1 1 1 1 1 1 )
+
+deceleration_limits are (1 1 1 1 1 1 )
+
+deceleration_gains are (1 1 1 1 1 1 )
+
+initial state is [0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           ]
+
+dynamic_process_noise_covariance is true
+permit_corrected_publication is false
+print_diagnostics is true
+Subscribed to /imu/data (imu0)
+	imu0_differential is false
+	imu0_pose_rejection_threshold is 1.7977e+308
+	imu0_twist_rejection_threshold is 1.7977e+308
+	imu0_linear_acceleration_rejection_threshold is 1.7977e+308
+	imu0_remove_gravitational_acceleration is true
+	imu0 pose update vector is (false false false true true true false false false false false false false false false )
+	imu0 twist update vector is (false false false false false false false false false false false false false false false )
+	imu0 acceleration update vector is (false false false false false false false false false false false false false false false )
+Process noise covariance is:
+[0.05        0           0           0           0           0           0           0           0           0           0           0           0           0           0           
+ 0           0.05        0           0           0           0           0           0           0           0           0           0           0           0           0           
+ 0           0           0.06        0           0           0           0           0           0           0           0           0           0           0           0           
+ 0           0           0           0.1         0           0           0           0           0           0           0           0           0           0           0           
+ 0           0           0           0           0.1         0           0           0           0           0           0           0           0           0           0           
+ 0           0           0           0           0           0.1         0           0           0           0           0           0           0           0           0           
+ 0           0           0           0           0           0           0.025       0           0           0           0           0           0           0           0           
+ 0           0           0           0           0           0           0           0.025       0           0           0           0           0           0           0           
+ 0           0           0           0           0           0           0           0           0.04        0           0           0           0           0           0           
+ 0           0           0           0           0           0           0           0           0           0.01        0           0           0           0           0           
+ 0           0           0           0           0           0           0           0           0           0           0.01        0           0           0           0           
+ 0           0           0           0           0           0           0           0           0           0           0           0.02        0           0           0           
+ 0           0           0           0           0           0           0           0           0           0           0           0           0.01        0           0           
+ 0           0           0           0           0           0           0           0           0           0           0           0           0           0.01        0           
+ 0           0           0           0           0           0           0           0           0           0           0           0           0           0           0.015       ]
+
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.8616387844
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.8726723194
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.8757705688
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.8729064465
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.8733804226
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.875431776
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.8757140636
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.8901026249
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.9043779373
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.9225649834
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.9232361317
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.9234790802
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.9251732826
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.9257991314
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.926232338
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.9329588413
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.9472417831
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.9615440369
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810246.9741470814
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.9757902622
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810246.9901182652
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.004401207
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.0186839104
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.0247378349
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.0329725742
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.0472397804
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.0615363121
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.0758092403
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.0762491226
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.0797405243
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.0901191235
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.1044156551
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.1186845303
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.1271724701
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.1329491138
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.1472334862
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.1615409851
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.1758201122
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.1772508621
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.1798608303
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.1901142597
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.2043945789
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.2186772823
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.2337155342
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.2282185555
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.2472479343
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.2615408897
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.2757987976
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.2782618999
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.2785215378
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.2791426182
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.2792356014
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.2796165943
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.2901110649
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.304397583
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.3186895847
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.3287830353
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.3290317059
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.3297226429
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.3298406601
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.3303892612
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.3329844475
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.3473267555
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.3614873886
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.3758065701
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.3793039322
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.3801090717
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.3802373409
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.3806114197
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.3901267052
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.4044113159
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.4186794758
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.4299764633
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.4302334785
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.4312779903
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.4314255714
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.4319636822
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.4337091446
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.447773695
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.4615533352
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.4758181572
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.480817318
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.4902822971
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.5043990612
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.5186846256
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.5308697224
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.5311295986
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.5313081741
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.5315122604
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.531678915
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.5357174873
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.5472548008
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.5615377426
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.5758063793
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.5814003944
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.5816755295
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.5824487209
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.5829923153
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::poseCallback (imu0_pose) ------
+Pose message:
+0xaaab1f15fd90Update vector for imu0_pose is:
+(false false false true true true false false false false false false false false false )
+------ RosFilter<T>::preparePose (imu0_pose) ------
+Final target frame for imu0_pose is base_link
+Could not transform measurement into base_link. Ignoring...
+----- /RosFilter<T>::preparePose (imu0_pose) ------
+Did *not* enqueue measurement for imu0_pose
+Last message time for imu0_pose is now 1705810247.5839552879
+
+----- /RosFilter<T>::poseCallback (imu0_pose) ------
+
+----- /RosFilter<T>::imuCallback (imu0) ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.5900993347
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------
+------ RosFilter<T>::integrateMeasurements ------
+
+Integration time is 1705810247.6043946743
+0 measurements in queue.
+Filter not yet initialized.
+
+----- /RosFilter<T>::integrateMeasurements ------

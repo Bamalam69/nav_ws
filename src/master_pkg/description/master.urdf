@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="nav_robot">
+
+  <!-- Map frame -->
+  <!-- <link name="map"/> -->
+
+  <!-- Odom frame -->
+  <!-- <link name="odom"/>
+  <joint name="map_to_odom" type="floating">
+    <parent link="map"/>
+    <child link="odom"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint> -->
+
+  <!-- Base link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+    </visual>
+  </link>
+  <!-- <joint name="odom_to_base" type="floating">
+    <parent link="odom"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint> -->
+
+  <!-- IMU link -->
+  <link name="imu_link"/>
+  <joint name="base_to_imu" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0.0 0.1 0.1" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Link for camera -->
+  <link name="camera_link"/>
+  <joint name="base_to_camera" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.1 0.0 0.2" rpy="0 0 0"/>
+  </joint>
+</robot>

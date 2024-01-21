@@ -6,6 +6,7 @@
 #include <string>
 #include <errno.h>
 #include <rclcpp/rclcpp.hpp>
+#include <functional>
 
 namespace IL {
 
@@ -187,10 +188,10 @@ namespace IL {
 		return deviceParam;
 	}
 
-	void Driver::setCallback(void (*newCallback)(INSDataStruct*, void*), void * userContext)
+	void Driver::setCallback(std::function<void(INSDataStruct*)> newCallback)
 	{
 		callback = newCallback;
-		callbackContext = userContext;
+		// callbackContext = userContext;
 	}
 
 	int Driver::sendPacket(char type, const char* payload, unsigned int size)
@@ -208,17 +209,10 @@ namespace IL {
 
 	int Driver::readDevInfo()
 	{
-		// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Starting read dev info...");
-		
 		int result = sendPacket(0, "\x12", 1);(void) result;
-
-		// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Sent packet");
 
 		for (int sec = 0; sec < 15; ++sec) {
 			std::this_thread::sleep_for(std::chrono::seconds(1));
-	
-			// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for session state... (%d)", sessionState);
-
 			if (sessionState)
 				break;
 		}
@@ -228,19 +222,13 @@ namespace IL {
 			return 2;
 		}
 		
-		// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Sending second...");
-		
 		sendPacket(0, "\x41", 1);
-
-		// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Sent second");
 
 		for (int sec = 0; sec < 10; ++sec) {
 			std::this_thread::sleep_for(std::chrono::seconds(1));
 			if (GotDevParams == sessionState || Processing == sessionState)
 				break;
 		}
-
-		// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "FinisheD dev info");
 
 		return 0;
 	}
@@ -268,20 +256,14 @@ namespace IL {
 		uint8_t byte = 0, prevByte = 0;
 		bool headerWritten = false;
 
-		RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Started up read loop.");
-
 		while (!quit)
 		{
-			// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Reading port...");
 			int readBytes = port->read(buf, sizeof(buf));
-			// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Read %i bytes.", readBytes);
 			if (readBytes < 0) {
-				// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Negative read bytes. Closing...");
 				quit = true;
 			}
 			else
 			{
-				// RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Read bytes.");
 				for (int i = 0; i < readBytes; ++i)
 				{
 					prevByte = byte;
@@ -462,7 +444,7 @@ namespace IL {
 										latestData = parser.outData;
 										if (onRequestMode && parser.code == requestCode)
 											requestFulfilled = true;
-										if (callback) callback(&latestData, callbackContext);
+										if (callback) callback(&latestData);
 									}
 								}
 							}

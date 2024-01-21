@@ -16,9 +16,9 @@ class BaslerCamera(Node):
         self.cam = Camera(self.calibrator, color=False, auto=False)
         self.bridge = cv_bridge.CvBridge()
 
-        self.raw_image_publisher = self.create_publisher(Image, '/camera/image_raw', 1)
-        self.rectified_image_publisher = self.create_publisher(Image, '/camera/image_rect', 1)
-        self.camera_info_publisher = self.create_publisher(CameraInfo, '/camera/camera_info', 1)
+        self.raw_image_publisher = self.create_publisher(Image, '/camera/image_raw', 10)
+        self.rectified_image_publisher = self.create_publisher(Image, '/camera/image_rect', 10)
+        self.camera_info_publisher = self.create_publisher(CameraInfo, '/camera/camera_info', 10)
         
         timer_period = 0.01
         
@@ -27,18 +27,21 @@ class BaslerCamera(Node):
     def timer_callback(self):
         # Publish raw image:
         img = self.cam.get_image()
-        msg = self.bridge.cv2_to_imgmsg(img, encoding="mono8")
-        self.raw_image_publisher.publish(msg)
+        image_msg = self.bridge.cv2_to_imgmsg(img, encoding="mono8")
+        image_msg.header.frame_id = "camera"
+        image_msg.header.stamp = self.get_clock().now().to_msg()
+        self.raw_image_publisher.publish(image_msg)
 
         # Publish rectified image:
         # TODO: Currently not actually rectifying the image... :(
-        self.calibrator.undistort_image(img)
+        # self.calibrator.undistort_image(img)
         msg = self.bridge.cv2_to_imgmsg(img, encoding="mono8")
         self.rectified_image_publisher.publish(msg)
 
         # Also publish camera info:
         msg = CameraInfo()
         msg.header.frame_id = "camera"
+        msg.header.stamp = image_msg.header.stamp
         msg.height = self.cam.height
         msg.width = self.cam.width
         msg.distortion_model = "plumb_bob"

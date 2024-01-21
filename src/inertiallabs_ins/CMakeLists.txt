@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 find_package(inertiallabs_interfaces REQUIRED)
 
 # Add the custom message include directory
@@ -29,6 +30,7 @@ ament_target_dependencies(inertiallabs_ins
   rclcpp
   sensor_msgs
   inertiallabs_interfaces
+  nav_msgs
 )
 
 install(TARGETS

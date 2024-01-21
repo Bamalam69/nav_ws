@@ -7,6 +7,7 @@ import glob
 import numpy as np
 import pickle
 from typing_extensions import Self
+from functools import cached_property
 
 CAMERA_SERIAL = '23884525'
 
@@ -50,15 +51,15 @@ class Camera:
     # def start_grabbing(self):
     #     self.camera.StartGrabbing(pylon.GrabStrategy_LatestImages)
 
-    @property
+    @cached_property
     def height(self):
         return self.camera.Height.GetValue()
     
-    @property
+    @cached_property
     def width(self):
         return self.camera.Width.GetValue()
 
-    @property
+    @cached_property
     def intrinsics(self):
         if self.calibrator is not None:
             return self.calibrator.camera_matrix.flatten().tolist()
@@ -68,13 +69,13 @@ class Camera:
             0, 0, 1
         ]
     
-    @property
+    @cached_property
     def distortion_parameters(self):
         if self.calibrator is not None:
             return self.calibrator.dist.flatten().tolist()
         return [0, 0, 0, 0, 0]
 
-    @property
+    @cached_property
     def rectification(self):
         # Monocular camera, so no rectification
         return list(map(float,[
@@ -83,7 +84,7 @@ class Camera:
             0, 0, 1
         ]))
 
-    @property
+    @cached_property
     def projection_matrix(self):
         if self.calibrator is not None:
             return list(map(float, [
