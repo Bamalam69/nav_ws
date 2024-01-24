@@ -27,18 +27,18 @@
   </joint> -->
 
   <!-- IMU link -->
-  <link name="imu_link"/>
+  <link name="imu"/>
   <joint name="base_to_imu" type="fixed">
     <parent link="base_link"/>
-    <child link="imu_link"/>
-    <origin xyz="0.0 0.1 0.1" rpy="0 0 0"/>
+    <child link="imu"/>
+    <origin xyz="0.0 0.1 0.1" rpy="0 0 0"/> 
   </joint>
 
   <!-- Link for camera -->
-  <link name="camera_link"/>
+  <link name="camera"/>
   <joint name="base_to_camera" type="fixed">
     <parent link="base_link"/>
-    <child link="camera_link"/>
-    <origin xyz="0.1 0.0 0.2" rpy="0 0 0"/>
+    <child link="camera"/>
+    <origin xyz="0.1 0.0 0.2" rpy="-1.570796327 0 -1.570796327"/>
   </joint>
 </robot>

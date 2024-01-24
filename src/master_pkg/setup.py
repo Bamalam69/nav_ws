@@ -15,6 +15,7 @@ setup(
         (os.path.join('share', package_name), glob('launch/*.launch.py')),
         (os.path.join('share', package_name), glob('description/*.urdf')),
         (os.path.join('share', package_name), glob('params/*.yaml')),
+        (os.path.join('share', package_name), glob('cfg/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

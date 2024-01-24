@@ -8,7 +8,7 @@ from typing_extensions import Self
 from rclpy.qos import QoSProfile, QoSHistoryPolicy, ReliabilityPolicy, DurabilityPolicy, QoSPolicyEnum
 
 from cv_bridge import CvBridge
-import cv2@id:ms-python.python
+import cv2
 import cv2.typing as cvt
 
 import numpy as np

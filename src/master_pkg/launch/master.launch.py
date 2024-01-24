@@ -26,9 +26,23 @@ def generate_launch_description():
         #     name='inertiallabs_ins',
         #     output='screen'
         # ),
-        # TimerAction(
-        #     period=7.5,
-        #     actions=[
+        # Node(
+        #     package='robot_localization',
+        #     executable='navsat_transform_node',
+        #     name='navsat_transform_node',
+        #     output='screen',
+        #     parameters=[{
+        #         'magnetic_declination_radians': 0.3652888603,
+        #         'yaw_offset': 0.0,
+        #         'zero_altitude': False,
+        #         # 'broadcast_utm_transform': True,
+        #         # 'broadcast_utm_transform_as_parent_frame': False,
+        #         # 'publish_filtered_gps': False,
+        #         'use_odometry_yaw': False,
+        #         'wait_for_datum': False,
+        #         'publish_enu_pose': False,
+        #     }],
+        # ),
         Node(
             package='robot_localization',
             executable='ekf_node',
@@ -37,9 +51,8 @@ def generate_launch_description():
             remappings=[
                 ('/odometry/filtered', '/odometry/filtered_odom'),
             ],
-            # arguments=['--ros-args', '--log-level', 'debug'],
             parameters=[{
-                'frequency': 60.0,
+                'frequency': 30.0,
 
                 'print_diagnostics': True,
 
@@ -54,23 +67,23 @@ def generate_launch_description():
                     False, False, False,
                     True,  True,  True,
                     False, False, False,
-                    False, False, False,
-                    False,  False,  False,
+                    True, True, True,
+                    True,  True,  True,
                 ],
                 'imu0_queue_size': 30,
                 'imu0_relative': False,
                 'imu0_differential': False,
 
-                # 'odom0': '/odemetry/data',
-                # 'odom0_config': [False,  False,  False,
-                #                 False, False, False,
-                #                 True, True, True,
-                #                 False, False, False,
-                #                 False, False, False,
-                #     ],
-                # 'odom0_differential': True,
-                # 'odom0_queue_size': 10,
-                # 'odom0_relative': True,
+                'odom0': '/odemetry/data',
+                'odom0_config': [False,  False,  False,
+                                True, True, True,
+                                True, True, True,
+                                False, False, False,
+                                False, False, False,
+                    ],
+                'odom0_differential': False,
+                'odom0_queue_size': 10,
+                'odom0_relative': True,
 
                 # 'dynamic_process_noise_covariance' : True,
                 # 'process_noise_covariance': [ 
@@ -103,7 +116,7 @@ def generate_launch_description():
                 ('/odometry/filtered', '/odometry/filtered_map'),
             ],
             parameters=[{
-                'frequency': 60.0,
+                'frequency': 30.0,
 
                 'debug': True,
                 'debug_out_file': '/home/nvidia/debug_ekf.txt',
@@ -125,7 +138,7 @@ def generate_launch_description():
                     False,  False,  False,
                 ],
                 'imu0_queue_size': 30,
-                'imu0_relative': False,
+                'imu0_relative': True,
                 'imu0_differential': False,
 
                 # 'odom0': '/odemetry/data',
@@ -161,6 +174,12 @@ def generate_launch_description():
 
             }],
         ),
-            # ]
+        # Start RViz2:
+        # Node(
+        #     package='rviz2',
+        #     executable='rviz2',
+        #     name='rviz2',
+        #     output='screen',
+        #     arguments=['-d', os.path.join(master_pkg_share, 'rviz', 'rviz_config.rviz')]
         # ),
     ])

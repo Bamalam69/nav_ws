@@ -13,11 +13,11 @@ import locale
 class INSCacher(Node):
     def __init__(self, save_path: str = './imu_cache'):
         super().__init__('ins_cacher')
-        self.subscription1 = self.create_subscription(GnssData, '/Inertial_Labs/gnss_data', self.gnss_callback, 10)
-        self.subscription2 = self.create_subscription(GpsData, '/Inertial_Labs/gps_data', self.gps_callback, 10)
-        self.subscription3 = self.create_subscription(InsData, '/Inertial_Labs/ins_data', self.ins_callback, 10)
-        self.subscription4 = self.create_subscription(MarineData, '/Inertial_Labs/marine_data', self.marine_callback, 10)
-        self.subscription5 = self.create_subscription(SensorData, '/Inertial_Labs/sensor_data', self.sensor_callback, 10)
+        self.subscription1 = self.create_subscription(GnssData, '/Inertial_labs/gnss_data', self.gnss_callback, 10)
+        self.subscription2 = self.create_subscription(GpsData, '/Inertial_labs/gps_data', self.gps_callback, 10)
+        self.subscription3 = self.create_subscription(InsData, '/Inertial_labs/ins_data', self.ins_callback, 10)
+        self.subscription4 = self.create_subscription(MarineData, '/Inertial_labs/marine_data', self.marine_callback, 10)
+        self.subscription5 = self.create_subscription(SensorData, '/Inertial_labs/sensor_data', self.sensor_callback, 10)
         
         # TODO: Check if file already exists...
 
@@ -47,6 +47,7 @@ class INSCacher(Node):
                 file.write(bytes(',\n', encoding=locale.getpreferredencoding()))
 
     def gnss_callback(self, msg: GnssData):
+        self.get_logger().info(f"Got gnss.")
         gnss_data = {
             "timestamp": msg.header.stamp.sec + msg.header.stamp.nanosec / 1e9,
             "gnss_info_1": msg.gnss_info_1,
@@ -76,6 +77,7 @@ class INSCacher(Node):
         self.log_files['gnss'].write(bytes(',\n', encoding=locale.getpreferredencoding()))
 
     def gps_callback(self, msg: GpsData):
+        self.get_logger().info(f"Got gps.")
         gps_data = {
             "timestamp": msg.header.stamp.sec + msg.header.stamp.nanosec / 1e9,
                 "llh": {
@@ -92,6 +94,7 @@ class INSCacher(Node):
         self.log_files['gps'].write(bytes(',\n', encoding=locale.getpreferredencoding()))
 
     def ins_callback(self, msg: InsData):
+        self.get_logger().info(f"Got ins.")
         ins_data = {
             "timestamp": msg.header.stamp.sec + msg.header.stamp.nanosec / 1e9,
             "gps_ins_time": msg.gps_ins_time,
@@ -132,6 +135,7 @@ class INSCacher(Node):
         self.log_files['ins'].write(bytes(',\n', encoding=locale.getpreferredencoding()))
 
     def marine_callback(self, msg: MarineData):
+        self.get_logger().info(f"Got marine.")
         marine_data = {
             "timestamp": msg.header.stamp.sec + msg.header.stamp.nanosec / 1e9,
             "heave": msg.heave,
@@ -147,6 +151,7 @@ class INSCacher(Node):
         self.log_files['marine'].write(bytes(',\n', encoding=locale.getpreferredencoding()))
 
     def sensor_callback(self, msg: SensorData):
+        self.get_logger().info(f"Got sensors.")
         sensor_data = {
             "timestamp": msg.header.stamp.sec + msg.header.stamp.nanosec / 1e9,
             "mag": {
@@ -168,7 +173,6 @@ class INSCacher(Node):
             "vinp": msg.vinp,
             "pressure": msg.pressure,
             "barometric_height": msg.barometric_height,
-
         }
         seri = json.dumps(sensor_data, indent=4)
         self.log_files['sensor'].write(bytes(seri, encoding=locale.getpreferredencoding()))
